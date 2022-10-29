@@ -1,0 +1,9 @@
+--- a/setup.py	2022-10-28 14:07:27.000000000 -0700
++++ b/setup.py	2022-10-28 14:09:24.000000000 -0700
+@@ -27,5 +27,5 @@
+       packages=['emopt'],
+       package_data={'emopt':['*.so', '*.csv', 'data/*']},
+       cmdclass={'install':MakeInstall},
+-      install_requires=['numpy', 'scipy', 'mpi4py', 'petsc4py==3.12.0', 'slepc4py==3.12.0'],
++      install_requires=['numpy', 'scipy', 'mpi4py', 'petsc4py>=3.12.0', 'slepc4py>=3.12.0'],
+       zip_safe=False)

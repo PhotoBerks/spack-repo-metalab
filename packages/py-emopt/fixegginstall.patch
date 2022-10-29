@@ -1,0 +1,13 @@
+diff --git a/setup.py b/setup.py
+index 2d70113..7d6eee1 100644
+--- a/setup.py
++++ b/setup.py
+@@ -14,7 +14,7 @@ class MakeInstall(SetuptoolsInstall):
+         else:
+             pass # install dependencies as needed
+         subprocess.call('make')
+-        SetuptoolsInstall.do_egg_install(self)
++        #SetuptoolsInstall.do_egg_install(self)
+ 
+ setup(name='emopt',
+       version='2020.9.21',
